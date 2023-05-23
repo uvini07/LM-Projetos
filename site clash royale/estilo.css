@@ -1,0 +1,79 @@
+body{
+    margin:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: #444;
+    line-height:1.6;
+    background-color: #669de6;
+}
+
+.conteiner{
+    margin: 0 auto;
+    width: 960px;
+    padding: 20px;
+    background-color:rgb(71, 0, 236);
+}
+
+.card{
+    float: left;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.cardlogo{
+    /* float: left; */
+    padding-left:10px;
+    background-color: rgb(71, 0, 236);
+    margin-right: 10px;
+    text-align: left;
+    width: max-content;
+    float: left;
+    
+}
+.card img{
+    float: left;
+    margin: 10px;
+
+}
+
+.button{
+    text-decoration: none;
+    background-color: rgb(45, 132, 231);
+    color: #FFF;
+    padding: 15px;
+    border: 5px solid rgb(90, 9, 184);
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.link{
+    margin-top: 20px;
+    text-align: right;
+}
+
+.clear{
+    clear: both;
+    height: 1px;
+}
+h2{
+color: rgb(10, 10, 10);
+font-weight: bold;
+
+}
+.cardlupa{
+    text-align: right;
+
+}
+
+.rodape{
+background-color: rgb(71, 0, 236);
+
+
+}
+
+h3{
+color: white;
+
+}

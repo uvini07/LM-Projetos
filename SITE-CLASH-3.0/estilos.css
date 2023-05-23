@@ -1,0 +1,128 @@
+body{
+        margin: 0px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 16px;
+        line-height:1.6;
+        background-color:  #669de6
+    
+    }
+    .conteiner{
+        margin: 0 auto;
+        width: 960px;
+        padding:20px;
+        background-color: rgb(71, 0, 236);
+        
+                
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 10px;
+        background-color:rgb(71, 0, 236);
+        border-radius: 10px;
+    
+    }
+    .grid-card{
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 10px;
+        column-gap: 20px;
+        background-color: rgb(232, 236, 236);
+        border-radius: 10px;
+        
+    }
+    .grid-item-1{
+        grid-column: 1 / span 4;
+    
+    }
+    .grid-item-4{
+        grid-column: 1 / span 4;
+    
+    }
+
+    .grid-item-4{
+        grid-column: 1 / span 4;
+    }
+    
+    
+    .button{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        background-color: rgb(219, 171, 12);
+        padding: 10px;
+        border: 4px solid   rgb(219, 171, 12);
+        border-radius: 15px;
+        font-weight: bold;
+        hover
+    }
+    .link{
+        margin-top: 20px;
+        text-align: right;
+    
+    }
+
+    
+    h1{
+        color: #669de6;
+        text-align: center;
+        background-color: #669de6;
+
+
+    }
+    
+    .cardlogo{
+        /* float: left; */
+        padding-left:10px;
+        
+        margin-right:10px;
+        text-align: left;
+        width: max-content;
+        float: left;
+        
+    }
+
+    .cardlupa{
+        text-align: right;
+    
+    }
+
+    .grid-container2{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        /*justify-content: space-around;*/
+        /*justify-content: space-between;*/
+        justify-content: center;
+        /* justify-content: start; */
+        /* justify-content: end; */
+        /* column-gap: 20px; */
+        /* row-gap: 20px; */
+        gap: 20px;
+    
+        padding: 10px;
+    }
+    
+    .grid-item{
+        background-color: black;
+        padding:5px;
+        font-size: 0px;
+        text-align: center;
+    
+    }  
+
+    .card{
+        float: center;
+        padding: 10px;
+        background-color: rgb(71, 0, 236);
+        margin-bottom: 10px;
+        border-radius: 15px;
+    }
+    .rodape{
+        color: white;
+        background-color: rgb(71, 0, 236);;
+
+
+  }
+    .grande
+
+        a:link, a:visited, a:active {text-decoration: none;}
+        a:hover {text-decoration:solid  color:rgb(47, 6, 230); font-size:150%; 
