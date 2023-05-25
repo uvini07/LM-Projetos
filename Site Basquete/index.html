@@ -1,66 +1,70 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    
-
     <title>Lakers Site Oficial</title>
-
     <link rel="stylesheet" href="./CSS/estilos.css">
-
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-
-    
 </head>
 
-
 <body>
-
-
     <header>
-
         <div>
-            <a href=""><img  class="header-Logo" src="./img/Nets-removebg-preview (1).png" width="235"></a>
+            <a href=""><img class="header-Logo" src="./img/Nets-removebg-preview (1).png" width="235"></a>
         </div>
-
         <ul class="navlist">
-
             <!-- MENU -->
-        <ul class ="naviliste">
-           <a  class="box" href="#"> <li>Loja</li></a> 
-           <a class="box" href="#"> <li>Basquete</li></a>  
-           <a class="box" href="#"> <li>Futebol</li></a>
-
-           
-        </ul> 
-
-        <ul class ="navilistd">
-            <a class="box" href="#"> <li>Seleção</li></a> 
-            <a  class="box"href="#"> <li>Ingresso</li></a>
-            <a  class="box"href="#"> <li>NBA</li></a>
-
+            <ul class="naviliste">
+                <a class="box" href="#"><li>Loja</li></a>
+                <a class="box" href="#"><li>Basquete</li></a>
+                <a class="box" href="#"><li>Futebol</li></a>
+            </ul>
+            <ul class="navilistd">
+                <a class="box" href="#"><li>Seleção</li></a>
+                <a class="box" href="#"><li>Ingresso</li></a>
+                <a class="box" href="#"><li>NBA</li></a>
+            </ul>
         </ul>
        
-
-        
     </header>
-
     <main>
-        
+        <div class="slider">
+            <div class="slides">
+                <!--Radios Buttons-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <!--Fim Radios Buttons-->
+                <!--slide img-->
+                <div class="slide first">
+                    <img src="./img/Dundo.png">
+                </div>
+                <div class="slide">
+                    <img src="./img/fundo-1 (2).png" alt="">
+                </div>
+            </div>
+            <div class="manual-navigation">
+                <label class="manual-btn" for="radio1"></label>
+                <label class="manual-btn" for="radio2"></label>
+            </div>
+        </div>
+        <h1>CONFIRA NOSSOS VIDEOS</h1>
+        <div class="grid-card">
+            <img src="./img/onlocatino.2.png" alt="LOGO CSS" title="LOGO CSS" width="460">
+            <div class="grid-item-2">
+                <img src="./img/marcelin.jpg" alt="LOGO CSS" title="LOGO CSS" width="460">
+            </div>
+            <div>
+                <img src="./img/Onlocatinon.png" alt="LOGO CSS" title="LOGO CSS" width="460">
+            </div>
+            <div class="grid-item-4"></div>
+        </div>
+        <div class="app"></div>
     </main>
-
-    <!-- <a href="#" class="btn-gradient">Saiba mais...</a>   -->
-
-
 </body>
 
 </html>
