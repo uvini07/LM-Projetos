@@ -22,13 +22,13 @@ body{
         border-radius: 10px;
     
     }
-    .grid-card{
-        display: grid;
-        grid-template-columns: auto auto;
-        padding: 10px;
-        column-gap: 20px;
-        background-color: rgb(232, 236, 236);
-        border-radius: 10px;
+        .grid-card{
+            display: grid;
+            grid-template-columns: auto auto;
+            padding: 10px;
+            column-gap: 20px;
+            background-color: rgb(232, 236, 236);
+            border-radius: 10px;
         
     }
     .grid-item-1{

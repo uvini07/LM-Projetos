@@ -16,8 +16,8 @@ body {
   background-color: #000000;
   text-align: center;
   font-family: 'Righteous', cursive;
-  margin-top: 125px;
-  margin-left: 0px;
+  margin-top: 140px;
+  
 }
 
 header {
@@ -30,28 +30,98 @@ header {
 
 .header-Logo {
   position: absolute;
-  top: 12%;
-  left: 50%;
+  top: 7%;
+  left: 5%;
   transform: translate(-50%, -50%);
   background-color: #000000;
   border-radius: 800px;
+}
+
+.header-bola {
+  position: absolute;
+  top: 6.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
 }
 
 header a {
   overflow: clip;
 }
 
+.floating { 
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 15px); }
+  100%   { transform: translate(0, -0px); }   
+}
+
+.mainmenubtn {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding:20px;
+  margin-top:20px;
+}
+.mainmenubtn:hover {
+  background-color: rgb(0, 0, 0);
+  
+  }
+.dropdown {
+  position: relative;
+  display: inline-block;
+  position: absolute;
+  top: -0.5%;
+  left: 95%;
+}
+.dropdown-child {
+  display: none;
+  background-color: rgb(0, 0, 0);
+  min-width: 200px;
+  margin-left: -100px;
+}
+.dropdown-child a {
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown:hover .dropdown-child {
+  display: block;
+}
+
 main {
   padding-top: 170px;
+  
   background-color: var(--cor-fundo);
   width: 100%;
   border: #ffffff;
 }
 
+
+
+.naviliste {
+  /*nav-esquerda*/
+  position: absolute;
+  top: -8%;
+  left: 26.5%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
 .navilistd {
   /*nav-direita*/
   position: absolute;
-  top: -10%;
+  top: -8%;
   left: 79%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -61,24 +131,15 @@ main {
   font-size: var(--p-font);
   color: var(--text-color);
   font-weight: 600;
-  margin: 0 70px 130px;
+  margin: 0 35px 130px;
   text-decoration: none;
 }
 
-.naviliste {
-  /*nav-esquerda*/
-  position: absolute;
-  top: -10%;
-  left: 19%;
-  transform: translate(-50%, -50%);
-  display: flex;
-}
-
 .naviliste a {
-  font-size: var(--p-font);
+  font-size: 22px;
   color: var(--text-color);
   font-weight: 600;
-  margin: 0 70px 130px;
+  margin: 0 40px 130px;
   text-decoration: none;
 }
 
@@ -108,7 +169,7 @@ main {
 .slider {
   margin: 0 auto;
   width: 950px;
-  height: 150px;
+  height: 350px;
   overflow: hidden;
 }
 
@@ -168,47 +229,47 @@ main {
   margin-left: -25%;
 }
 
-.navigation-auto div {
-  border: 2px solid rgb(0, 0, 0);
-  padding: 5px;
+
+
+.separador{
+  background-color: var(--cor-texto);
+  color: var(--text-color);
+  margin: 100px 10px 10px 10px;
   border-radius: 10px;
-  cursor: pointer;
-  transition: 1s;
-}
+  
+  
+  }
+  
 
-.navigation-auto {
-  position: absolute;
-  width: 1000px;
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-}
+.grid-container{
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 10px;
+  margin-top: 150px;
+  border-radius: 10px;
 
-.navigation-auto div:not(:last-child) {
-  margin-right: 40px;
-}
-
-#radio1:checked~.navigation-auto .auto-btn1 {
-  background-color: #ffffff;
-}
-
-#radio2:checked~.navigation-auto .auto-btn2 {
-  background-color: #ffffff;
 }
 
 .grid-card {
   display: grid;
   grid-template-columns: auto auto;
-  padding: 10px;
+  
   column-gap: 20px;
   background-color: rgb(232, 236, 236);
   border-radius: 10px;
-  margin-top: 10px;
+  margin-top: 8px;
+  margin-bottom: 100px;
+
 }
 
-.grid-item-1 {
-  grid-column: 1 / span 2;
-  margin-top: 100px;
+.grid-item-3{
+  background-color: #bbb;
+  box-shadow: 10px black;
+  padding:20px;
+  border-radius: 20px;
+  font-size: 20px;
+  text-align: center;
+
 }
 
 .grid-item-4 {
@@ -216,6 +277,7 @@ main {
   margin: 100px;
 }
 
-.h1 {
-  margin-top: 150px;
+.historia{
+border-radius: 55px;
+
 }
