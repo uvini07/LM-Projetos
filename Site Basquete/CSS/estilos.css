@@ -18,7 +18,7 @@
   font-family: 'Righteous', cursive;
   margin-top: 140px;
   }
-
+/* inicio header */
   header {
   max-width: 100%;
   height: auto;
@@ -26,7 +26,7 @@
   margin: -30px;
   list-style: none;
   }
-
+/* logo */
   .header-Logo {
   position: absolute;
   top: 7%;
@@ -35,18 +35,21 @@
   background-color: #000000;
   border-radius: 800px;
   }
-
+/* logo fim */
+/* bola de basquete flutuando */
   .header-bola {
   position: absolute;
   top: 6.5%;
   left: 51%;
   transform: translate(-50%, -50%);
   }
+  /* bola fim */
 
   header a {
   overflow: clip;
   }
-
+  /* fim header */
+/* inicio botão menu */
   .floating { 
   animation-name: floating;
   animation-duration: 3s;
@@ -101,23 +104,18 @@
   .dropdown:hover .dropdown-child {
   display: block;
   }
-  
+  /* fim botão menu */
+
+  /* inicio main( conteudo principal do site) */
   main {
   padding-top: 0px;
   background-color: var(--cor-fundo);
   width: 100%;
   border: #ffffff;
   }
+  /* fim do main */
 
-  .naviliste {
-  /*nav-esquerda*/
-  position: absolute;
-  top: -8%;
-  left: 26.5%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  }
-  
+  /* inicio navelist */
   .navilistd {
   /*nav-direita*/
   position: absolute;
@@ -134,6 +132,15 @@
   margin: 0 40px 130px;
   text-decoration: none;
   }
+
+  .naviliste {
+    /*nav-esquerda*/
+    position: absolute;
+    top: -8%;
+    left: 26.5%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    }
 
   .naviliste a {
   font-size: 22px;
@@ -160,12 +167,13 @@
   transform: rotateX('10');
   color: #fcfcfc;
   }
+/* fim nav */
 
   .container {
   background-color: #000000;
   color: var(--cor-fundo);
   }
-
+/* inicio slides */
   .slider {
   margin: 0 auto;
   width: 1509px;
@@ -188,7 +196,8 @@
   position: relative;
   transition: 2s;
   }
-
+/* fim dos slides  */
+/* começo dos botões de navegação dos slides */
   .manual-navigation {
   position: absolute;
   width: 400px;
@@ -232,13 +241,16 @@
   #radio4:checked~.first {
   margin-left: -75%;
   }
-
+  /* fim dos botões de navegação dos slides */
+  /* separador de conteudo */
   .separador{
   background-color: var(--cor-texto);
   color: var(--text-color);
   margin: 100px 10px 10px 10px;
   border-radius: 10px;
   }
+  /* fim do separador de conteudo */
+
 
   .grid-container{
   display: grid;
@@ -247,7 +259,7 @@
   margin-top: 150px;
   border-radius: 10px;
   }
-
+/* card inicio(grid com imagens dos videos)*/
   .grid-card {
   display: grid;
   grid-template-columns: auto auto;
@@ -257,7 +269,8 @@
   margin-top: 8px;
   margin-bottom: 100px;
   }
-
+/* card fim*/
+/* grid-item-1 */
   .grid-item-3{
   background-color: #bbb;
   box-shadow: 10px black;
@@ -266,12 +279,12 @@
   font-size: 20px;
   text-align: center;
   }
+  /* grid-item-1 fim */
 
+/* grid-item-2 */
   .grid-item-4 {
   grid-column: 1 / span 3;
   margin: 100px;
   }
+/* grid-item-2 fim */
   
-  .historia{
-  border-radius: 55px;
-  }
