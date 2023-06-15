@@ -10,45 +10,69 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./img/download.png">
 </head>
 
 <body>
     <header>
         <div>
             <a href=""><img class="header-Logo" src="./img/download.png" width="75"></a>
-            <a class="header-bola" href=""><img class="floating"
-                    src="data:image/png;base64,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" /></a>
+
+
         </div>
         <div class="dropdown">
             <button class="mainmenubtn"><img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAIBJREFUSEvtlUEKgDAMBDs/82n6M31ZJGIPWm09LFYwufRQ2IFh05I6DZ24KcCvmQ/Vm2ozG/1QeQemc9alajOTQR0IFJxvgVWKaznR6tzqQdzqJVp9t06uWjbA/Ei1jFgJinXK6/Szt3r/FmUdA/ybPUyUS6a3FRSqW4Zk991Ur2ArKh8V51fYAAAAAElFTkSuQmCC" /></button>
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAGZJREFUSEvtlrENACAMw8pnnMZpfAYTC1W3CDOEA2JhUpUW0GkQNwx+Zt6qj+ohdp7yKtVLDE6c78DiC+c4t/o46WLX8877rlzYOGGqxU/scYryB4KVCwNja9GtlhvwWpQrrQIx1Rt3TwofeC3yFwAAAABJRU5ErkJggg==" /></button>
             <div class="dropdown-child">
-                <a href="#">Jogadores</a>
-                <a href="#">Títulos</a>
-                <a href="#">Notícias</a>
+                <a href="https://www.nba.com/nets/roster">Jogadores</a>
+                <a href="https://www.nba.com/nets/corporate-partners">Patrocinadores</a>
+                <a href="https://www.nba.com/nets/news">Notícias</a>
                 <a href="#">Contacto-nos</a>
-                <a href="#">FAQ</a>
+                <a href="https://www.nba.com/standings">Temporada</a>
             </div>
         </div>
-        <div class="navlist">
+        <di class="navlist">
             <!-- MENU -->
             <ul class="naviliste">
-                
-                <a class="box" href="#"><li>Basquete</li></a>
-                <a class="box" href="#"><li>Ingresso</li></a>
-                <a class="box" href="#"><li>NBA</li></a>
-                <a class="box" href="#"><li>Seleção</li></a>
+
+                <a class="box" href="https://www.nba.com/nets/community/basketball">
+                    <li>Basquete</li>
+                </a>
+                <a class="box" href="https://www.nba.com/nets/tickets">
+                    <li>Ingresso</li>
+                </a>
+                <a class="box" href="#loja">
+                    <li>Loja</li>
+                </a>
+                <a class="box" href="#nba">
+                    <li>NBA</li>
+                </a>
             </ul>
             <ul class="navilistd">
-                <a class="box" href="#"><li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAehJREFUSEvtlo1RAjEQhd9WoFagVqAdqBWoFYgVCBWoFWgHQgVCBWIF0oHSAVbwnMdsMBfuhws4OI47wzBwuXzZt5uXGLYUtiUuWoNJngLYAXDsi54AmJnZa5skVgKTFOQGwAWA3QrADMAQwL2ZfTQtohZMUpAHAJ2miZLnfQA9M9NiSqMS7Fk+AziI3hwAGAOYmJkkho+TIirBVTRWz6/DuJReCvbJXiJZRwC6TRKS1CIfAZw7SBmflcGXwC7vW5SpJNNkKwfJrpdI7yhzwQuyl4FVnyCZpNLv1pHAB2ZW6JMC2CVWtoqRmamLs4Ok+uHEJziMS5WC42wLA3PoXvN3f7eQdQpWHWQOS9LkgL3rQzIymb0wzwLsjqROVmTXNl0gSdX2yf9Xk0n+b8skqXpq3yq0Sg1QnStNoE4F3x3aVtrfobEuzUzuVgDfAbhNJsvOPMk0TCs7FacRvBjYtsYkyxL5B8/NvlaaPyl1bOxLXbihjBcHTmwgOvR1c5BzhVhnO6Wl+9SJF3whtUzBtdn1LePor2EgMbiXzrXSnSuW2Y1/P5F+ml4SSOocPgKgZ/EtZv5qDri2+31hcsBgk6UmtClwVe9NdQ0uK9dPgnXP7lTd03LAOm30qYtxOP6qBrUGt93Pvw78BYTi9x8yqFk0AAAAAElFTkSuQmCC"/></li></a>
-                <a class="box" href="#"><li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAcpJREFUSEvtVsFRAzEM3K0AOiAdABUQKoBUAFRAqIBQAVABUAFJBUAH0AElhArELGPf+Hy+s+ObIZ9oJo8kslZaSysTWzJuCRc74H9jfjTVZrYP4BrA1H2+ATwDeCS5ViVmNgGw9t/1WwvYBXkFMAud+mhwAd8AKHBsPoFzAD8klVhjMbCcBLwkOcvxbmbvAE4yfl8AFHdCUv5/FgMvANy6/+R0Q/IzFdjMVIGqzZnoFs40jBUDp4Ipmea+PIqZzQHc51BFcwzaqdg1giWCKeul+3zo/s0sZGcI/46kfFvW6WozuwTwVFCJmifVVPHRPLCj7wDAkRuNAvysyxVJjVd/xRs0TBYtcDhONWhqjkXh3iaRB3w1vxKYjo2545LcViQ1w3lg19m6Y3XiWUn0AZ/TUDRCv6RWuyYTaEvmNkxCY9d7vg9YYyLFGnPXyabyyfduJzMT3ZLNGnBJ7cMQQ4Nr0W0rCYqSuCik+oWkzgxaCbCWhnS5xIpAFagBdtUdAtDcqUKvXsk5jLLQIpinFKov29R20hjldqyPJ0DJ4aLk4VAyTupqf7eq2Ceipa5NJXXTY0Ebq8pGv7mqUOMXSG2QmnO7imtYqzrzC9pUlR9K9AFxAAAAAElFTkSuQmCC"/></li></a>
-                <a class="box" href="#"><li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAhRJREFUSEvlVu0xREEQ7I4AESACRIAIEACFBMjAiQAR+EgAEeC3H06V/2SACFq1mqf2vdt39t2pOsr8ubq73e2Z3p6eJSYUnBAufjewpGkAC4XsPJJ8+25ta8UBdgBgHcDcdwc1/n8BcAXgsC2JLLCkFQCnCeA7gH4h+CKAqVjrBDZIDuwdAI5KHwL0GsA+SR9QHJIMfgxgGYD3LjUrzwF7wx6Aa5KmuVNI2gRAkheSbgP8hOR+elAO2BnOApgfoVKDXgTATlR740+S863AQfMrACvTdA1E0LgGoPrf92d2+pK2AJzHpl2Sp5IU32dSumsVh6ic4R1JC6wWknoArPRc9EgeSto21QCeSN5LcmJuxVWSpv4zioETUCvcOqgOcYK+PyvZ7ePkviK55+7AQa+VbtC5pkLjiqwNg9e0MS5wRfFARVVpkqpuqK0ZF9guZEHV6GpQ6ta7bLbhnwWeGNXuWYvLU8fiqU2fENczAE+xnxOX7zJpJ4Om7eS7de8a9GfbKVHuMAPJKr7UQJy1LbNPcqnFMj2bXWFqmWdtvl5kmUHpyEMiY7F2NVvwO0kX9RXDxuIVyY0WXy76uetYdGY2do9G+/HOCOPR13AEwBVnbXbY0+cswF2dldzl6VPRatD1dCplp1PDAr3ZKraQqjdUEcVRpW3Wz6bsi7PoXS3JSi59ab7lHnfNjIuAS8vssu7/AX8A9G5ULowqLPIAAAAASUVORK5CYII="/></li></a>
-                <a class="box" href="#"><li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAbxJREFUSEvFlo1NwzAUhO8moBvQTgBMQJkA2IARYAJgAmACYAOYgHYD2KBMAExw6Cqncl3nt4nypKqSk7zPfj/nR4xkHImLvcCS5gBOo81/k3xpcph9wXcAbiPQiuRsDLCZM5KrOnjfJzbvnqQjUWlDgA08IflZRR4KbOY1gFeSv7kNDAk2z9AFgPe02ocGF4ddknTrbaxv8B+Ag0xou4MlTQEc2inJpf8lpX3s9SsAjwDOow20AweYBeICwKRwRHIdqRy4CKmkYwD+ecMTki62+lCHDz9iYBtwpz6ugoZQ1564K9gtEIv/lp8moW4NluTieE4+/ALgQlrEglCV4y7gt6Qi3SLTnAL1DbbaxL1YKvp9g5WE6Yykc75jQ4NvSFoQcmDfQEdVQlGW6x3JlORLfK1QwbJThSQLyk/iuNFdvG7JdEeSrDAPybpDfVkUmCQrmSt/o2bh/dK0pJwc2M586pzYO7R+bhlMzYNebj0b7eztFKZHy2VTc8vN66aO2FnptRjC6VE1d/LYR2toNsexx1BAFpQy+XyyopWNN1XhajQIhOvRE0SRQ+d6Sz6b5qR4rxG4rdMm748G/gf4oswfVbxvGwAAAABJRU5ErkJggg=="/></li></a>
-                <a class="box" href="#"><li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAipJREFUSEvtVts1REEQrIoAESACZEAGRIAIEAEiQASIgAysCJABEVgRtFN7uufM7Znr9WF9mL8709PVVV09u8ScFueEi3/gX1P+b0ttZuuSguTjR5KY2QqAZZL3n0k3ytjBDgBsA1j0RFMAJyQv6sQOeANgViAAxU0AnI4V2wV20LsKMBMQ8y2S007si1hXBSiuUaoBNjOxE2hU/wTgFoBkFPsFTypGRx6rO9cADqtirgCsOfsGvAesC7ue/JrkXtB1SVWEEoakM9A6TgdOQMUptjkfAHvwqyd9Ihmsi9QOLumCuaRdF9PcDzOTQuq91irJ54jJwCcAjv1wn6TYN8vMDgGcVayVtAF25gJTzy9I6t5sZeAIeiMZTu4BR1ycNVJW7QkyU5JLDXCSeVBdjWxmkejN90NyGUg9HSwz23QDDuQujFOA5k8AOYl6/uCbcrTkvfTvR5IbI60x3y/F1cBybyTZISn3ZmCZSi59IanxkntjT59HJM879wK4+KYGro3VyJYMVQpLSkmBjdq9qbii5JeA/XUKie9Jqm9lmZlY6nnVmpDcSufBuAtcm6C41E0nUEkrQ2lmyzw6I02A9sJoRfKkSFEqj5OkistioW/1ftbPsR46eP1YaCvua3ZVmIpeiXnPwLXBskdGZzUCkw/y/cGk9N5qgavaYK5Kz3vjNTI6+b7CmvH87Pd4sfco9AA7I6SZH73/t//6fIXhd2P+GX9XsR/Hz03qd6RMEC5MCUD8AAAAAElFTkSuQmCC"/></li></a>
+                <a class="box" href="https://www.youtube.com/channel/UCTenKHt0h3VjdMvRWP6Lbvw">
+                    <li><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAaRJREFUSEvt1j9IVlEYx/GPGARh1NASLaHUVkubOLQkYWRjY0RUICRCuhj9oT821JC4NERDo1NBFAUN0RqEaIRITQ3i4FYOFsUD98LtoLznfXlvr4PPcjmX5/y+PL/znD9dOhRdHeLaBv8357eU1TtwGv34UViwD4ews4ElP7GA+Eb8wRxe4ld1blrxUbzAwTZ7/g3D+FzqpuAPGGgztJR7g5MbgQ/ge03QUnY/lmNQrfgE3tYMPo73Kfg8nmaAowd6cSQjN005i9kUfBUPM8Ru4B4uYArR8blxEU9S8C3czFAI8J0iby9uYwTdGXNHMZOCo9qoulFUwWXuYUxXu3YTkYnS1Wpz3cW1RlRcR+RWIw6XRxhqMH8S91u1ugreXVh9JdPqscKZf7bTOB5kVhxNdalY62aa6xyepRVfxuMM8HP0tbidYilep+AzCNE6I+6C+RQcnblYJxW7sJaCY/wRx2qCv8KpUju9nQL6DnvaDP9a3PFfNgPH/x4MYrV4DMSZHLdKM7GCJazjU/EQ+F0V2FJPn2Yqazl3u+KWrWt2Yses/gukJj8f6HDQbQAAAABJRU5ErkJggg==" />
+                    </li>
+                </a>
+                <a class="box" href="https://twitter.com/brooklynnets">
+                    <li><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAe5JREFUSEvt1kuozVEUx/HPjYEkz+KWV5SkxAATrzwiKQORDBQpA4UUZSAGd0ApCZGpibeMJBOFgcREhkwoSZlIeRet2vd077/zP3ufzsmZ3F27/2Cv/fvutfbaa/379Gj09YhrBPzfIt+NUE/AZSzHTPzAOZzGt+TJtPT9NOhZFTwWV7AXfwrcn46nmNPE9gOuYyHGY8VQmyp4G+7gHnYUwO9jc+aAb7ApReNxnccHcSEtPscuvK0RXooXBVF5h35sxYM68Go0ToWfOImL+F6BHML5AvDn5MDDVqEeg68YXRGMJLmLa3iFjziBgQLwGRyr2jXL6v0pS1tpfkHMWQXg4ziVA+/BIizGugLREpPQvJoDb8SwuyhRztjE+36WA8fdRhbP7gIwJOI6JuFvDhzrq9I7ntIF+E3sbKZTVzKjIh3BPozr4ABrKs+zIVUHPoDtWNIB+CWW1R26DrwArzGqA2/X41G74LDfghuIxtHuOIujrTbl2uJURNjXYmUh/Qk24Fcn4GhnkWSHU2vLsSNCu3PQEBnq8eRUsaKZz08zqle8w9yI9xql8VLOcHC9GurI5Kir8woFfuNWikrj76Jkb90dh6fR4OPPYgbmYiKixcV8n4rM7VSdSljDbHLJ1bZg6YYRcGmkOrbrWaj/AVe4TB8KwZmFAAAAAElFTkSuQmCC" />
+                    </li>
+                </a>
+                <a class="box" href="https://www.tiktok.com/@brooklynnets">
+                    <li><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAgxJREFUSEvF1kvoTVEUx/HP37OIjL0nRPKIRB6RMsCAsUyUZMBIGJhQBhhQmBgwMzARGTAzYEJKHnnEyGMgSiJJebRq39p259x77uPf3bN79l7ru35rrb3uHjGkNTIkrn7Bm7E2C/4dLjUR0y/4NA5loPeYNQxwMGcjlLddg1YcsMjCkWGA/2Aj7raD96v4FA5XAH5hL67iZ1UAowVusSKAB7iGs3kA/YLLrq7LbsBXDRJcpvoHJmBcEcF9rO4FPB4zMB1jcC85KcFPsAMnsDMDdQ2eiaPYk6n4imnJ6cni6jzGsrS3EOuwIP0+2FTxetzC5CJt3zElfStr/AyLO93h2K9rrjW4k+pV+vmGqTXgp1jSK3gsIvJWiko/o6Z4Ny4XtBc4lrIQ9X3dprmW9qr4OrZnxp9Tw3yocDiwGkfNo4Z5Q4XS4zUqBgaONH4pIFtwuwZ8HvuzvUdY3kuqYzj8Lgz34WKNs2jCRdnejTRAOrKrrtNDrMgsXyIaJgZ+vuKl8bb4dgb/DYq6CKrAB3CuMIhgduFV+r4NAZlfnNuUOr8nxZPwHHMqrGMWx9yOcViuxvUNw7rJFTO27QuioH7EhiwjPSluGcULIlI+sYOXN9iaDZWO0HaKW8bzcAUrK7z9xYX09Kl83rSLoOkLZG66NvEHEBn4hJsVXd1IbRPFjR11e7Cp4m79djz/D7vSXx9vwaOzAAAAAElFTkSuQmCC" />
+                    </li>
+                </a>
+                <a class="box" href="https://www.facebook.com/BrooklynNets">
+                    <li><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAPdJREFUSEvt1j1KQ0EUxfHfQ+ws04gLEMHGHRhwA7Y2pjFZhH12oJggmM4dpAvqElIouIFgbARTiiBPLIagvA99bxTftPdy/3POXA6TiHSSSFx/FryCHaxhgUc84CXLye8o3scJ1pcgt9iuCtzBxRfDKwOvYoZW3eBdXC1B7zHG88c7n1Zh9SFGweA5NvCaBQvrZZari0Ew5AapC4VOGXAPZwHlGu1CVEoFSK3gO2zlVHWJg6zevFYXAfdxHAN8hPMY4D1MfgoczkkVDWNsdQOuLUAaqxurs7LjvZ43q39FgKS/ys3gJk+Y5pIZNJVRXJTxaf//A78BOAw2H9IcdF0AAAAASUVORK5CYII=" />
+                    </li>
+                </a>
             </ul>
-        </div>
-           
-        </ul>
+            </div>
+
+            </ul>
     </header>
     <main>
         <div class="slider">
@@ -74,7 +98,7 @@
                 </div>
             </div>
             <!--fim slide img-->
-            
+
             <!-- botões de navegação -->
             <div class="manual-navigation">
                 <label class="manual-btn" for="radio1"></label>
@@ -84,24 +108,75 @@
                 <label class="manual-btn" for="radio5"></label>
             </div>
         </div>
+
+
+
+
+
+
         <!--fim botões de navegação -->
+        <h1 class="loja" id="loja">LOJA NET SOTRE</h1>
+        <div class="card-grid">
+            <div class="card">
+                <h3 class="">NEW ARRIVALS</h3>
+                <img src="./img/produto1.jpeg" alt="Produto 1">
+
+
+                <a href="#" class="btn">COMPRAR</a>
+            </div>
+            <div class="card">
+                <h3 class="">MEN</h3>
+                <img src="./img/protudo2.jpeg" alt="Produto 2">
+
+
+                <a href="#" class="btn">COMPRAR</a>
+            </div>
+            <div class="card">
+                <h3 class="">WOMAN</h3>
+                <img src="./img/produto3.jpeg" alt="Produto 3">
+
+
+                <a href="#" class="btn">COMPRAR</a>
+            </div>
+        </div>
+
+
 
         <!-- quebre da pagina(separador) -->
-        <h1 class="separador">CONFIRA NOSSOS VIDEOS</h1>
-         <!-- fim (separador) -->
+        <h1 class="separador" >CONFIRA NOSSOS VIDEOS</h1>
+        <!-- fim (separador) -->
         <!-- inicio classe card -->
-        <div class="grid-card">
-            <img src="./img/onlocatino.2.png" width="460">
-            <div class="grid-item-2">
-                <img src="./img/marcelin.jpg" width="460">
+        <div class="banner-grid">
+            <div class="banner">
+                <img src="./img/onlocatino.2.png" alt="Banner 1">
             </div>
-            <div>
-                <img src="./img/Onlocatinon.png" width="460">
+            <div class="banner">
+                <img src="./img/Onlocatinon.png" alt="Banner 2">
             </div>
-            <div class="grid-item-4"></div>
+            <div class="banner">
+                <img src="./img/marcelin.jpg" alt="Banner 3">
+            </div>
+        </div> 
+        <h1 id="nba">TODOS DISPONÍVEIS NO YOUTUBE</h1>
+            <div class="banner-grid">
+            <div class="banner">
+                <img src="./img/video1.avif" alt="Banner 3">
+            </div>
+            <div class="banner">
+                <img src="./img/video2.avif" alt="Banner 3">
+            </div>
+            <div class="banner">
+                <img src="./img/video3.avif" alt="Banner 3">
+            </div>  
+        </div> 
         </div>
-        <div class="app"></div>
+        
     </main>
+<div class="rodape">
+
+</div>
+
+
 </body>
 
 </html>

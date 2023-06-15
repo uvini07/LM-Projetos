@@ -1,22 +1,27 @@
 :root {
-  --cor-fundo: rgb(232, 236, 236);
-  --cor-texto: #000000;
-  --text-color: #ffffff;
+  --cor-fundo: rgb(0, 0, 0);
+  --cor-texto: #fcfcfc;
+  --text-color: #000000;
   --text-color2: #9C9A9A;
   --bg-color: #CCCCCC;
   --main-color: #427BED;
   --second-color: #FFFFFF;
   --other-color: #868686;
   --icon-color: #7f71eb;
+  --shadow-color: #FF9E9E;
+  --shadow-color-light: white;
   --big-font: 5.5rem;
   --p-font: 1.2rem;
   }
   
   body {
-  background-color: #000000;
+  background-color: #ffffff;
   text-align: center;
   font-family: 'Righteous', cursive;
   margin-top: 140px;
+  margin-left: -0px;
+  margin-right: 0px;
+  padding: 0px 0px 0px 0px
   }
 /* inicio header */
   header {
@@ -50,33 +55,19 @@
   }
   /* fim header */
 /* inicio botão menu */
-  .floating { 
-  animation-name: floating;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  margin-left: 30px;
-  margin-top: 5px;
-  margin-bottom: 3px;
-  }
-
-  @keyframes floating {
-  0% { transform: translate(0,  0px); }
-  50%  { transform: translate(0, 15px); }
-  100%   { transform: translate(0, -0px); }   
-  }
+ 
 
   .mainmenubtn {
-  background-color: rgb(0, 0, 0);
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 242, 242);
   border: none;
   cursor: pointer;
-  padding:20px;
+  padding:14px;
   margin-top:20px;
   }
 
   .mainmenubtn:hover {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
   }
 
   .dropdown {
@@ -89,13 +80,13 @@
 
   .dropdown-child {
   display: none;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
   min-width: 200px;
   margin-left: -100px;
   }
 
   .dropdown-child a {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   padding: 20px;
   text-decoration: none;
   display: block;
@@ -108,10 +99,10 @@
 
   /* inicio main( conteudo principal do site) */
   main {
-  padding-top: 0px;
   background-color: var(--cor-fundo);
   width: 100%;
   border: #ffffff;
+  padding: left -90px;
   }
   /* fim do main */
 
@@ -119,8 +110,8 @@
   .navilistd {
   /*nav-direita*/
   position: absolute;
-  top: -7%;
-  left: 75%;
+  top: -10%;
+  left: 79%;
   transform: translate(-50%, -50%);
   display: flex;
   }
@@ -129,17 +120,18 @@
   font-size: var(--p-font);
   color: var(--text-color);
   font-weight: 600;
-  margin: 0 40px 130px;
+  margin: 0 26px 130px;
   text-decoration: none;
   }
 
   .naviliste {
     /*nav-esquerda*/
     position: absolute;
-    top: -8%;
+    top: -11%;
     left: 26.5%;
     transform: translate(-50%, -50%);
     display: flex;
+
     }
 
   .naviliste a {
@@ -148,6 +140,14 @@
   font-weight: 600;
   margin: 0 30px 130px;
   text-decoration: none;
+ 
+  }
+
+
+  h1{
+color: white;
+
+
   }
 
   .box {
@@ -163,22 +163,30 @@
   }
 
   .box:hover {
-  transform: translateY(-5px) scale(1.1);
-  transform: rotateX('10');
-  color: #fcfcfc;
+    transition: all 0.5s;
+    cursor: pointer;  
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+  color: #000000;
   }
+
+  
+
+  
 /* fim nav */
 
   .container {
-  background-color: #000000;
+  background-color: #fcfcfc;
   color: var(--cor-fundo);
   }
 /* inicio slides */
   .slider {
   margin: 0 auto;
-  width: 1509px;
+  background-color: white;
+  width: 1519px;
   height: 600px;
   overflow: hidden;
+  padding-bottom: 30px;
   }
 
   .slides {
@@ -244,47 +252,118 @@
   /* fim dos botões de navegação dos slides */
   /* separador de conteudo */
   .separador{
-  background-color: var(--cor-texto);
+  background-color: #FFFFFF;
   color: var(--text-color);
-  margin: 100px 10px 10px 10px;
-  border-radius: 10px;
+  margin-top: 10px;
+  padding-top: 120px;
+  padding-bottom: 9px;
+    
   }
+
+.loja{
+  color: white;
+  animation: neon 3s infinite;
+margin-top: 60px;
+margin-bottom: 3px;
+background: rgb(7, 7, 7);
+color: white;
+
+}
+
+@keyframes neon {
+  0% {
+    text-shadow: -2px -2px 2px var(--shadow-color-light), -2px 2px 2px var(--shadow-color-light), 3px -3px 3px var(--shadow-color-light), 3px 3px 3px var(--shadow-color-light),
+    0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 10px var(--shadow-color-light),
+    0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 80px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
+  }
+  50% {
+    text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
+    0 0 5px var(--shadow-color-light), 0 0 15px var(--shadow-color-light), 0 0 25px var(--shadow-color-light),
+    0 0 40px var(--shadow-color), 0 0 30px var(--shadow-color), 0 0 60px var(--shadow-color), 0 0 80px var(--shadow-color), 0 0 110px var(--shadow-color), 0 0 210px var(--shadow-color);
+  }
+  
+}
+
+html{
+
+  scroll-behavior: smooth;
+
+}
+
+
   /* fim do separador de conteudo */
 
 
-  .grid-container{
+.card-grid {
+  margin-top: 15px;
   display: grid;
-  grid-template-columns: auto;
-  row-gap: 10px;
-  margin-top: 150px;
-  border-radius: 10px;
-  }
-/* card inicio(grid com imagens dos videos)*/
-  .grid-card {
-  display: grid;
-  grid-template-columns: auto auto;
-  column-gap: -10px;
-  background-color: rgb(232, 236, 236);
-  border-radius: 10px;
-  margin-top: 8px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  background-color: black;
   margin-bottom: 100px;
-  }
-/* card fim*/
-/* grid-item-1 */
-  .grid-item-3{
-  background-color: #bbb;
-  box-shadow: 10px black;
-  padding:20px;
-  border-radius: 20px;
-  font-size: 20px;
-  text-align: center;
-  }
-  /* grid-item-1 fim */
+}
 
-/* grid-item-2 */
-  .grid-item-4 {
-  grid-column: 1 / span 3;
-  margin: 100px;
-  }
-/* grid-item-2 fim */
-  
+.card {
+padding-bottom: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 2.2rem;
+  color: white;
+
+}
+
+
+
+.card p {
+  font-size: 4px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 8px 180px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: rgb(141, 139, 139);
+  color: black;
+} 
+
+.banner-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.banner {
+  text-align: center;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+.rodape{
+background-color: white;
+
+
+
+}
+
