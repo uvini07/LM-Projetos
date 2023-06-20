@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,64 +6,221 @@
     font-family: 'Karantina', cursive;
 }
 
-header{
-    background-color: black;
+header {
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    top: 0px;
+
 }
 
-.centro{
+
+
+
+
+.centro {
     width: 1440px;
     margin: 0 auto;
 }
 
+
 /* header parte esquerda */
-.menu-esquerda ul{
+
+.menu-esquerda ul {
     position: relative;
     display: inline-block;
     top: -25px;
     margin-left: 15px;
 }
 
-.menu-esquerda li{
+.menu-esquerda li {
     display: inline-block;
-    padding: 0 10px;
+    padding: 0 13px;
+
 }
 
-.menu-esquerda a{
+
+
+.menu-esquerda a {
     color: white;
-    font-size: 25px;
+    font-size: 23px;
+    transition: ease-in-out 1s;
 }
+
+.menu-esquerda a:hover {
+    font-size: 25px;
+    color: rgb(224, 103, 103);
+}
+
 
 /* header parte direita */
-.menu-direita ul{
+
+.menu-direita ul {
     position: relative;
     display: inline-block;
     top: -50px;
     float: right;
 }
 
-.menu-direita li{
+.menu-direita li {
     display: inline-block;
     padding: 0 70px;
 }
 
-.menu-direita a{
+.menu-direita a {
     color: white;
     font-size: 25px;
+    position: absolute;
+    margin-left: -100px;
+    top: 2px;
+    padding: 0 13px;
 }
 
-.notificacao{
+.bell {
+    color: white;
+    position: absolute;
+    font-size: 28px;
+    margin-left: 1338px;
+    margin-top: -35px;
+    top: 60px;
+    transition: ease-in-out 0.5s;
+}
+
+
+.bell:hover {
+    color: red;
+    border-radius: 50%;
+
+}
+
+.notificacao {
     position: absolute;
     width: 20px;
     height: 20px;
     background-color: red;
     display: inline-block;
-    margin-left: -64px;
+    margin-left: -80px;
     top: -11px;
     border-radius: 13px;
     text-align: center;
 }
 
-.notificacao span{
+.notificacao span {
     color: white;
     font-size: 20px;
+}
+
+
+/* .fullscreen-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+} */
+
+#video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+
+.texto-destaque {
+    z-index: 3;
+    position: relative;
+    top: -30px;
+    margin-top: 610px;
+    margin-left: 4%;
+    color: white;
+    width: 600px;
+}
+
+.texto-destaque h2 {
+    color: red;
+    font-size: 70px;
+}
+
+.texto-destaque a {
+
+    background-color: rgba(255, 0, 0, 0.3);
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    padding: 8px 70px;
+    top: 0px;
+    margin-right: 15px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+
+}
+
+.texto-destaque a:hover {
+    background-color: red;
+    color: #700808;
+
+}
+
+
+
+.carousel {
+    padding: 60px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 200px;
+    margin: 0 10px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-controls {
+    font-size: 50px;
+    position: absolute;
+    display: flex;
+    color: white;
+    margin-left: 5px;
+    margin-top: -250px;
+    gap: 1430px;
+
+}
+
+.carousel-control {
+    cursor: pointer;
+    padding: 5px;
+    transition: ease-in-out 1s;
+}
+
+.carousel-control:hover {
+    font-size: 70px;
+}
+
+.selecao {
+    background-color: black;
+
+}
+
+#disney {
+    position: absolute;
+    color: white;
+    margin-left: 85px;
+    margin-top: 10px;
 }

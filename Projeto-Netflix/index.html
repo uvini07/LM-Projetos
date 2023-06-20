@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Karantina&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -16,24 +17,29 @@
     <header>
         <div class="centro">
             <div class="menu-esquerda">
-                <a href=""> <img src="./img/logo.png" alt="Netflix-logo"> </a>
+                <a href="./index.html"> <img class="logo" src="./img/logo.png" alt="Netflix-logo"> </a>
                 <ul>
-                    <li><a href="">Filmes</a></li>
+                    <li><a href="">Início</a></li>
                     <li><a href="">Séries</a></li>
-                    <li><a href="">Favoritos</a></li>
-                    <a href=""><i class="fa fa-search" style="font-size:24px"></i></a>
+                    <li><a href="">Filmes</a></li>
+                    <li><a href="">Originais</a></li>
+                    <li><a href="">Minha lista</a></li>
                 </ul>
             </div>
 
             <div class="menu-direita">
                 <ul>
-                    <li><a href="">Infantil</a></li>
-
+                    <li><a href="">KIDS</a></li>
 
                     <div class="notificacao">
+
                         <span>3</span>
                     </div>
                 </ul>
+
+            </div>
+            <div class="bell">
+                <i class='bx bxs-bell'></i>
             </div>
         </div>
     </header>
@@ -41,12 +47,115 @@
 
     <!-- destaque -->
     <section class="destaque">
-        <video muted autoplay autostart loop>
+        <video class="fullscreen-video" muted autoplay autostart loop id="video">
+            <source type="video/mp4" src="./video/Trailer.mp4">
+        </video>
 
-            <source type="video/mp4" src="./video/Logan.mp4">
+        <div class="sobreposicao"></div>
 
         </video>
+        <div class="texto-destaque">
+            <h2>Veigh - Novo Balanço</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident sed id, quam eligendi quos
+                dignissimos quae! Rem aliquam aliquid perspiciatis nulla quo, debitis, ratione expedita aspernatur
+                officiis eius saepe fugit?
+
+            </p>
+            <br />
+
+            <a href="">Assistir</a>
+            <a href="">Trailer</a>
+        </div>
+
     </section>
+    <div class="selecao">
+        <h1 id="disney">Filmes da Disney</h1>
+        <div class="carousel">
+            <div class="carousel-container">
+                <div class="carousel-item">
+                    <img src="./img/filme1.jpg" alt="Image 1">
+                </div> 
+                <div class="carousel-item">
+                    <img src="./img/filme1.jpg" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/filme2.png" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/filme3.jpg" alt="Image 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/filme4.jpg" alt="Image 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/filme6.png" alt="Image 5">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/filme6.png" alt="Image 5">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/filme1.jpg" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/filme1.jpg" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/filme1.jpg" alt="Image 1">
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="carousel-controls">
+            <div class="carousel-control" onclick="prevSlide()">&#10094;</div>
+            <div class="carousel-control" onclick="nextSlide()">&#10095;</div>
+        </div>
+        <h1 id="disney">Filmes da A</h1>
+        <div class="carousel">
+            <div class="carousel-container">
+                <div class="carousel-item">
+                    <img src="./img/filme1.jpg" alt="Image 1">
+                </div> 
+                <div class="carousel-item">
+                    <img src="./img/filme1.jpg" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/filme2.png" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/filme3.jpg" alt="Image 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/filme4.jpg" alt="Image 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/filme6.png" alt="Image 5">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/filme6.png" alt="Image 5">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/filme1.jpg" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/filme1.jpg" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/filme1.jpg" alt="Image 1">
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="carousel-controls">
+            <div class="carousel-control2" onclick="prevSlide()">&#10094;</div>
+            <div class="carousel-control2" onclick="nextSlide()">&#10095;</div>
+        </div>
+
+        <script src="./js/java.js"></script>
+    </div>
 </body>
 
 </html>
